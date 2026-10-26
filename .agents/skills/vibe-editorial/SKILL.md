@@ -5,78 +5,65 @@ description: Applies the Editorial visual style (colors, fonts, spacing, layout,
 
 # Vibe: Editorial
 
-Status: PLACEHOLDER (delete this line when filled in)
-
-<!--
-How to fill this in (delete this comment block when done):
-- Keep the name field as vibe-editorial; it must match the folder name.
-- Keep every heading below, in this order. The Vibe Studio and the gallery rely on it.
-- Design tokens: keep the variable names exactly, change only the values. The site's styles.css copies this block to the top of the file.
-- Layout must be one of: single column, grid, editorial, tiles.
-- Motion must be one of: none, subtle, lively (then describe it in one line). Whatever the level: animate only transform and opacity, 150 to 300ms, never `transition: all`, nothing moves on page load without a reason, at most two scroll reveals, and everything stops under prefers-reduced-motion.
-- Do / Don't: make them specific to this vibe ("no gradients", "sharp corners only"), not general advice. Text contrast must stay at least 4.5:1.
-- Do not edit the "Content rule" section.
--->
-
 ## Feel
-<1 to 2 sentences: the mood and who it suits.> Draft: Magazine, calm, lots of whitespace. Signature move: Huge serif headline, pull-quote bio.
+A calm, magazine-like portfolio with generous whitespace and a quietly confident reading rhythm. Suits writing, design, research, and other work that benefits from an editorial presentation.
 
 ## Design tokens
 ```css
 :root {
-  /* Colors (mode: light or dark) */
-  --color-bg: #ffffff;
-  --color-text: #111111;
-  --color-muted: #666666;
-  --color-accent: #3366ff;
-  --color-border: #e5e5e5;
+  /* Colors (mode: light) */
+  --color-bg: #FAF9F6;
+  --color-text: #22201E;
+  --color-muted: #625C56;
+  --color-accent: #7D342D;
+  --color-border: #D8D2C9;
 
   /* Fonts */
-  --font-heading: "Font Name", sans-serif; /* draft: Playfair Display */
-  --font-body: "Font Name", sans-serif; /* draft: Inter */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
 
-  /* Shape and spacing (density: compact, normal or roomy) */
-  --radius: 8px;
+  /* Shape and spacing (density: roomy) */
+  --radius: 2px;
   --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 16px;
-  --space-4: 32px;
-  --space-5: 64px;
-  --max-width: 960px;
+  --space-2: 10px;
+  --space-3: 20px;
+  --space-4: 40px;
+  --space-5: 76px;
+  --max-width: 1080px;
 }
 ```
-Google Fonts link: `<link href="https://fonts.googleapis.com/css2?family=...&display=swap" rel="stylesheet">`
+Google Fonts link: `<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">`
 
 ## Layout rules
-Layout: <single column | grid | editorial | tiles>
-- Hero:
-- About:
-- Projects:
-- Contact:
+Layout: editorial
+- Hero: Build a spacious masthead with an exceptionally large Playfair Display headline (clamp to fit small screens), a small existing descriptor if provided, and a fine horizontal rule; never invent a magazine issue or dateline.
+- About: Treat the provided bio as a narrow text column with an optional oversized, blockquoted excerpt drawn verbatim from that same bio. Do not create a new quote or imply an endorsement.
+- Projects: Arrange the real project entries as editorial stories: strong serif titles, short existing descriptions, quiet metadata and separating hairlines. Alternate image/text only when the spec provides images.
+- Contact: Finish with an understated colophon-style section showing only the supplied contact information and links.
 
 ## Components
-- Hero:
-- Project card:
-- Skill tags:
-- Contact block:
+- Hero: Large serif h1, short existing supporting text, substantial whitespace, one fine rule.
+- Project card: A border-top editorial row with serif project title, real summary and a clearly underlined action link.
+- Skill tags: Small, flat, square-ended labels with generous inline gaps; no pill styling.
+- Contact block: Thin top rule, modest section heading and low-chrome list of real contact links.
 
 ## Motion
-Motion: <none | subtle | lively>. <one line on what moves, if anything>. Respect `prefers-reduced-motion`.
+Motion: subtle. Use a 200ms opacity change for link underlines and a 2px transform lift for project links on hover/focus; no automatic entrance motion. Any motion must use only `transform` and `opacity` over 150–300ms; never use `transition: all`, move elements merely because the page loads, or use more than two scroll reveals. Respect `prefers-reduced-motion`: turn off all movement and reveals.
 
 ## Do / Don't
 Do:
-1.
-2.
-3.
-4.
-5.
+1. Make the serif h1 the dominant visual landmark.
+2. Use narrow paragraph measures and ample outer margins.
+3. Set projects apart with fine rules rather than bulky cards.
+4. Use the rust accent only on active links and small callouts.
+5. Keep the pull quote an exact excerpt of the existing bio.
 
 Don't:
-1.
-2.
-3.
-4.
-5.
+1. Invent editorial captions, issue dates or pull quotes.
+2. Use gradients or glass panels.
+3. Round project cards into big pills.
+4. Apply decorative serif display type to long body paragraphs.
+5. Fill whitespace with ornamental icons or fake publications.
 
 ## Content rule
 All text and projects come from SPEC.md. Never invent content.
