@@ -5,78 +5,65 @@ description: Applies the Blueprint visual style (colors, fonts, spacing, layout,
 
 # Vibe: Blueprint
 
-Status: PLACEHOLDER (delete this line when filled in)
-
-<!--
-How to fill this in (delete this comment block when done):
-- Keep the name field as vibe-blueprint; it must match the folder name.
-- Keep every heading below, in this order. The Vibe Studio and the gallery rely on it.
-- Design tokens: keep the variable names exactly, change only the values. The site's styles.css copies this block to the top of the file.
-- Layout must be one of: single column, grid, editorial, tiles.
-- Motion must be one of: none, subtle, lively (then describe it in one line). Whatever the level: animate only transform and opacity, 150 to 300ms, never `transition: all`, nothing moves on page load without a reason, at most two scroll reveals, and everything stops under prefers-reduced-motion.
-- Do / Don't: make them specific to this vibe ("no gradients", "sharp corners only"), not general advice. Text contrast must stay at least 4.5:1.
-- Do not edit the "Content rule" section.
--->
-
 ## Feel
-<1 to 2 sentences: the mood and who it suits.> Draft: Engineering drawing. Signature move: Grid paper background, annotated callouts.
+Precise and methodical, styled like an engineering drawing on blue graph paper. Suits makers, researchers and builders who want structure, measurements and annotations as visual language.
 
 ## Design tokens
 ```css
 :root {
-  /* Colors (mode: light or dark) */
-  --color-bg: #ffffff;
-  --color-text: #111111;
-  --color-muted: #666666;
-  --color-accent: #3366ff;
-  --color-border: #e5e5e5;
+  /* Colors (mode: dark) */
+  --color-bg: #102E4B;
+  --color-text: #F1F8FF;
+  --color-muted: #B8D6EA;
+  --color-accent: #9CE6F9;
+  --color-border: #457393;
 
   /* Fonts */
-  --font-heading: "Font Name", sans-serif; /* draft: IBM Plex Mono */
-  --font-body: "Font Name", sans-serif; /* draft: IBM Plex Sans */
+  --font-heading: "IBM Plex Mono", monospace;
+  --font-body: "IBM Plex Sans", sans-serif;
 
-  /* Shape and spacing (density: compact, normal or roomy) */
-  --radius: 8px;
+  /* Shape and spacing (density: normal) */
+  --radius: 0px;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
   --space-4: 32px;
   --space-5: 64px;
-  --max-width: 960px;
+  --max-width: 1160px;
 }
 ```
-Google Fonts link: `<link href="https://fonts.googleapis.com/css2?family=...&display=swap" rel="stylesheet">`
+Google Fonts link: `<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">`
 
 ## Layout rules
-Layout: <single column | grid | editorial | tiles>
-- Hero:
-- About:
-- Projects:
-- Contact:
+Layout: grid
+- Hero: Use real introductory text with a technical title treatment, registration marks and a non-content line-grid drawn only in CSS.
+- About: Set the provided bio inside a clear rectangular drawing panel; use fine pointer lines only to visually emphasize existing text, never invent engineering annotations.
+- Projects: Frame each real project as a drafting-sheet module with measured-looking borders, a short real title and existing description. Decorative grid stays behind the text.
+- Contact: Treat actual contact links as a blueprint legend/key panel in a final full-width row, without assigning invented drawing codes.
 
 ## Components
-- Hero:
-- Project card:
-- Skill tags:
-- Contact block:
+- Hero: IBM Plex Mono heading with thin dimension-line decorations and static graph paper background.
+- Project card: Square framed drawing-panel card with crisp labels and real project details.
+- Skill tags: Blueprint legend-like outlined tags using actual skills from SPEC.md.
+- Contact block: Clean drafting-title-block treatment for true contact addresses/links only.
 
 ## Motion
-Motion: <none | subtle | lively>. <one line on what moves, if anything>. Respect `prefers-reduced-motion`.
+Motion: none. No motion; all hover/focus states appear immediately and leave the drawing grid stationary. Any motion must use only `transform` and `opacity` over 150–300ms; never use `transition: all`, move elements merely because the page loads, or use more than two scroll reveals. Respect `prefers-reduced-motion`: turn off all movement and reveals.
 
 ## Do / Don't
 Do:
-1.
-2.
-3.
-4.
-5.
+1. Render blueprint grid with low-contrast CSS background lines.
+2. Use white or near-white text and high-contrast cyan accents.
+3. Use clean right angles and fine technical outlines.
+4. Keep callout pointers attached to real content only.
+5. Use monospaced display and readable sans-serif body.
 
 Don't:
-1.
-2.
-3.
-4.
-5.
+1. Invent dimensions, coordinates or engineering measurements.
+2. Let grid lines run over letters at distracting opacity.
+3. Use rounded bubbly cards.
+4. Add animated scanning lines.
+5. Render annotations smaller than readable mobile body text.
 
 ## Content rule
 All text and projects come from SPEC.md. Never invent content.
