@@ -1,24 +1,13 @@
 # My portfolio spec
 
-Fill this in before you ask the agent to build anything. The agent can only use what you write here.
+<!-- WORKSHOP: Answer the questions below in plain English. Replace each question with your own answer. Keep the finished spec to 5–10 short lines. Delete any question you cannot answer; never invent projects, skills or links. Do not ask the agent to build until you have filled this in. -->
 
-## About me
-- Name:
-- What I study and where:
-- A 2 to 3 sentence bio (who I am, what I like building):
-
-## Projects (2 to 4, one line each)
-1. Title: / What it is: / Link (optional):
-2. Title: / What it is: / Link (optional):
-3. Title: / What it is: / Link (optional):
-
-## Skills and tools I have used
--
-
-## Contact
-- Email:
-- LinkedIn or GitHub (optional):
-
-## Extras (optional)
-- Photo file name (put it in public/assets/):
-- Resume PDF file name:
+- **Who I am:** What is your name, what do you study or do, and where?
+- **Audience and goal:** Who do you want to visit your portfolio, and what should they learn about you?
+- **About me:** In 1–2 sentences, what interests you or what do you enjoy building?
+- **Sections:** Which sections do you want? Choose only ones you have content for (Home, About, Projects, Skills, Contact, Resume).
+- **Projects:** What 1–3 real projects do you want to show? Give each project's name, what it does, and a link if you have one. If you have no projects yet, leave this out.
+- **Skills:** Which tools, languages or skills have you actually used?
+- **Contact:** Which email, GitHub or LinkedIn link should visitors use? Include only links you want public.
+- **Vibe and feel:** Which ONE available `vibe-...` skill do you want, and what 2–3 words describe the feel (for example: calm, bold, playful)?
+- **Optional files:** Are you including a photo or résumé? If so, what are the filenames in `public/assets/`? Otherwise, delete this line.

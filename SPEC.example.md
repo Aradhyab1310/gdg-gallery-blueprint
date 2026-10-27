@@ -1,24 +1,12 @@
-# Example spec (made-up student)
+# Example portfolio spec (fictional student)
 
-This is an EXAMPLE of a filled-in SPEC.md so you can see the level of detail that works. The student is made up. Do not copy it: write your own SPEC.md. The agent is told never to use this file's content.
+<!-- EXAMPLE ONLY. Sam Rivera and these projects are made up. Students write their own SPEC.md; agents must not use this file as a source of site content. -->
 
-## About me
-- Name: Sam Rivera
-- What I study and where: first-year Computer Science, York University
-- A 2 to 3 sentence bio: I like building small tools that fix annoying everyday problems. Right now I'm learning Python and web basics, and I want to try mobile apps next.
-
-## Projects (2 to 4, one line each)
-1. Title: Bus Buddy / What it is: a Python script that tells me when the next campus bus leaves / Link (optional):
-2. Title: Study Timer / What it is: a Pomodoro timer web page with a break reminder / Link (optional): https://example.com/sam/study-timer
-3. Title: Recipe Picker / What it is: picks a random dinner idea from a list I keep in a text file / Link (optional):
-
-## Skills and tools I have used
-- Python, HTML, CSS, a little JavaScript, Git
-
-## Contact
-- Email: sam.rivera@example.com
-- LinkedIn or GitHub (optional): https://example.com/sam
-
-## Extras (optional)
-- Photo file name (put it in public/assets/):
-- Resume PDF file name:
+- **Who I am:** Sam Rivera, first-year Computer Science student at York University.
+- **Audience and goal:** I want internship recruiters and classmates to see what I can build.
+- **About me:** I enjoy making small tools that solve everyday student problems.
+- **Sections:** Home, About, Projects, Skills, Contact.
+- **Projects:** Bus Buddy: a Python script showing upcoming campus bus departures; Study Timer: a simple Pomodoro timer website built with HTML, CSS and JavaScript.
+- **Skills:** Python, HTML, CSS, JavaScript, Git.
+- **Contact:** sam.rivera@example.com; GitHub: https://example.com/sam.
+- **Vibe and feel:** `vibe-terminal`: focused, dark, easy to scan.
