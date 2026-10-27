@@ -7,8 +7,8 @@
 - **About me:** In 1–2 sentences, what interests you or what do you enjoy building?
 - **Sections:** Which sections do you want? Choose only ones you have content for (Home, About, Projects, Skills, Contact, Resume).
 - **Projects:** What 1–3 real projects do you want to show? Put each one on its own line below: name, what it does, and a link if you have one. If you have no projects yet, delete this question.
-  - Project 1:
-  - Project 2:
+  - Project 1: name / what it does / link (optional)
+  - Project 2: name / what it does / link (optional)
 - **Skills:** Which tools, languages or skills have you actually used?
 - **Contact:** Which email, GitHub or LinkedIn link should visitors use? Include only links you want public.
 - **Vibe and feel:** Which ONE vibe do you want: `vibe-blueprint`, `vibe-brutalist`, `vibe-editorial`, `vibe-notebook`, `vibe-pixel`, `vibe-soft-pastel`, `vibe-terminal` or `vibe-y2k-web`? What 2–3 words describe the feel (for example: calm, bold, playful)?
