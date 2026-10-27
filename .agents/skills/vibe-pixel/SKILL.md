@@ -37,7 +37,7 @@ Google Fonts link: `<link href="https://fonts.googleapis.com/css2?family=Press+S
 ## Layout rules
 Layout: tiles
 - Hero: Make the real name an 8-bit title with a visible `PRESS START` interface control that jumps to actual projects or the first existing section; this is action text, not invented personal content.
-- About: Present actual bio text inside a rectangular dialog/menu panel using VT323 at 20px or larger.
+- About: Present actual bio text inside a rectangular dialog/menu panel using VT323 at 18px or larger.
 - Projects: Show real projects as selectable, keyboard-accessible game-menu entries, not fake levels or unlocked achievements.
 - Contact: Put the true contact methods under a clearly delineated final menu panel; never invent player stats or a high-score board.
 
@@ -52,7 +52,7 @@ Motion: none. No animation; instant focus and hover states emulate a classic men
 
 ## Do / Don't
 Do:
-1. Use Press Start 2P for short headlines and VT323 for paragraphs, with all VT323 body text at 20px or larger; it renders much smaller than other fonts at 16px.
+1. Use Press Start 2P for short headlines and VT323 for paragraphs, with all VT323 body text at 18px or larger; it renders much smaller than other fonts at 16px.
 2. Make PRESS START a functioning anchor to an existing section.
 3. Use chunky 90-degree borders and high-contrast color.
 4. Keep all navigation usable by keyboard and on touch screens.
