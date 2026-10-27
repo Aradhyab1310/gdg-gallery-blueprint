@@ -8,9 +8,9 @@
 
 ## Live site
 
-[View my portfolio](https://YOUR-PROJECT-ID.web.app)
+[View my portfolio](https://YOUR-SITE-ID.web.app)
 
-[Replace the example URL with your actual link after deploying. If your site is not live yet, write "Not deployed yet" instead.]
+[Replace the example URL with the Hosting URL that `firebase deploy` printed. If your site is not live yet, write "Not deployed yet" instead.]
 
 ## How it was built
 
