@@ -9,5 +9,5 @@
 - **Projects:** What 1–3 real projects do you want to show? Give each project's name, what it does, and a link if you have one. If you have no projects yet, leave this out.
 - **Skills:** Which tools, languages or skills have you actually used?
 - **Contact:** Which email, GitHub or LinkedIn link should visitors use? Include only links you want public.
-- **Vibe and feel:** Which ONE available `vibe-...` skill do you want, and what 2–3 words describe the feel (for example: calm, bold, playful)?
-- **Optional files:** Are you including a photo or résumé? If so, what are the filenames in `public/assets/`? Otherwise, delete this line.
+- **Vibe and feel:** Which ONE vibe do you want: `vibe-blueprint`, `vibe-brutalist`, `vibe-editorial`, `vibe-notebook`, `vibe-pixel`, `vibe-soft-pastel`, `vibe-terminal` or `vibe-y2k-web`? What 2–3 words describe the feel (for example: calm, bold, playful)?
+- **Optional files:** Are you including a photo or résumé? If so, put them in `public/assets/` (create the folder if it is missing) and write their filenames here. Otherwise, delete this line.
